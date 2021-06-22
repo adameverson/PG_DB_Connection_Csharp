@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/ve8qiNxWFkR8Y3F3Fg0h1+yh3x3PXRVwdk8jqecjIsxquXIf03qJMVNBH0fPFbdsjA6xL4dswnpzWbma+mGhA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\csharpDB_PG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Qualidade\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\Qualidade\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

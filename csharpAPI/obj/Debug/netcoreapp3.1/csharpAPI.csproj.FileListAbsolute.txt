@@ -1,0 +1,15 @@
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.exe
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.deps.json
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.runtimeconfig.json
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.runtimeconfig.dev.json
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.dll
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\csharpAPI.pdb
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.csprojAssemblyReference.cache
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.AssemblyInfoInputs.cache
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.AssemblyInfo.cs
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.csproj.CoreCompileInputs.cache
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.dll
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.pdb
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.genruntimeconfig.cache
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Qualidade\source\repos\csharpAPI\csharpAPI\obj\Debug\netcoreapp3.1\csharpAPI.csproj.CopyComplete
