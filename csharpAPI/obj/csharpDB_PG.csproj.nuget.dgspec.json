@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\csharpDB_PG.csproj": {}
+    "C:\\Users\\Qualidade\\Documents\\repgittestes\\PG_DB_Connection_Csharp\\csharpAPI\\csharpDB_PG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\csharpDB_PG.csproj": {
+    "C:\\Users\\Qualidade\\Documents\\repgittestes\\PG_DB_Connection_Csharp\\csharpAPI\\csharpDB_PG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\csharpDB_PG.csproj",
+        "projectUniqueName": "C:\\Users\\Qualidade\\Documents\\repgittestes\\PG_DB_Connection_Csharp\\csharpAPI\\csharpDB_PG.csproj",
         "projectName": "csharpDB_PG",
-        "projectPath": "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\csharpDB_PG.csproj",
+        "projectPath": "C:\\Users\\Qualidade\\Documents\\repgittestes\\PG_DB_Connection_Csharp\\csharpAPI\\csharpDB_PG.csproj",
         "packagesPath": "C:\\Users\\Qualidade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Qualidade\\source\\repos\\csharpAPI\\csharpAPI\\obj\\",
+        "outputPath": "C:\\Users\\Qualidade\\Documents\\repgittestes\\PG_DB_Connection_Csharp\\csharpAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
