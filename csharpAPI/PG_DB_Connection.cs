@@ -51,8 +51,8 @@ namespace Driver
             Select("SELECT * FROM \"ContratosFornecedores\" WHERE \"IdentificacaoRegistro\" IS NULL");
             */
 
-            SelectCustomizado1($"SELECT COUNT(*) FROM \"ContratosFornecedores\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes}) AND \"Ativo\" = 'TRUE' AND \"IdentificacaoRegistro\" IS NOT NULL AND \"IdentificacaoRegistro\" != ''");
-            SelectCustomizado2($"SELECT \"PrestacaoContaId\", \"NumeroContrato\", \"IdentificacaoRegistro\" FROM \"ContratosFornecedores\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes}) AND \"Ativo\" = 'TRUE' AND \"IdentificacaoRegistro\" IS NOT NULL AND \"IdentificacaoRegistro\" != ''");
+            SelectCustomizado1($"SELECT COUNT(*) FROM \"ContratosFornecedores\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes}) AND \"IdentificacaoRegistro\" IS NOT NULL AND \"IdentificacaoRegistro\" != ''");
+            SelectCustomizado2($"SELECT \"PrestacaoContaId\", \"NumeroContrato\", \"IdentificacaoRegistro\" FROM \"ContratosFornecedores\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes}) AND \"IdentificacaoRegistro\" IS NOT NULL AND \"IdentificacaoRegistro\" != ''");
             SelectCustomizado1($"SELECT COUNT(*) FROM \"ContratosFornecedores\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes}) AND \"Ativo\" = 'TRUE' AND \"IdentificacaoRegistro\" IS NULL");
 
             Console.WriteLine(
