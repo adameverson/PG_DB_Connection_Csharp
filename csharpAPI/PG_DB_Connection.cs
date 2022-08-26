@@ -344,7 +344,7 @@ namespace Driver
                 Console.Out.WriteLine("Opening connection");
                 conn.Open();
 
-                using (var command = new NpgsqlCommand("DELETE FROM \"ContaFinanceiras\" WHERE \"Id\" = @i", conn))
+                using (var command = new NpgsqlCommand("DELETE FROM \"ContaFinanceiras\" WHERE \"Id\" = @i AND \"Ativo\" = 'TRUE'", conn))
                 {
                     command.Parameters.AddWithValue("i", id);
 
