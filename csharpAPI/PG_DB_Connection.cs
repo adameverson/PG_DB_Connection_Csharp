@@ -74,7 +74,7 @@ namespace Driver
 
                 Console.WriteLine();
 
-                SelectContaFinanceirasCustomizado1($"SELECT \"IdentificacaoRegistro\", \"Id\", \"ContaContabil\" FROM \"ContaFinanceiras\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes[i]}) ORDER BY \"Id\"");
+                SelectContaFinanceirasCustomizado1($"SELECT \"IdentificacaoRegistro\", \"Id\", \"ContaContabil\" FROM \"ContaFinanceiras\" WHERE \"PrestacaoContaId\" IN ({txtPrestacoes[i]}) AND \"Ativo\" = {true} AND \"IdentificacaoRegistro\" IS NOT NULL  ORDER BY \"Id\"");
 
                 Console.WriteLine(
                 string.Format(
@@ -117,7 +117,7 @@ namespace Driver
                     );
                 }
 
-                if(msgFinalIrregular[i])
+                if (msgFinalIrregular[i])
                     Console.WriteLine("Há Contas Financeiras com o mesmo IdentificacaoRegistro e com ContaContabil diferente. Verificar com a OS qual das Contas não existe mais, remanegar os DocFinanceiros e deletar a mesma!");
 
                 Console.WriteLine();
@@ -259,7 +259,7 @@ namespace Driver
                     var reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        if(reader.GetString(0) == identificacaoRegistro && reader.GetInt32(1) != id && reader.GetString(2) == contaContabil)
+                        if (reader.GetString(0) == identificacaoRegistro && reader.GetInt32(1) != id && reader.GetString(2) == contaContabil)
                         {
                             int qtdId1 = SelectDocFinanceirosCustomizado1($"SELECT \"Id\" FROM \"DocFinanceiros\" WHERE \"ContaFinanceiraId\" IN ({id})");
                             int qtdId2 = SelectDocFinanceirosCustomizado1($"SELECT \"Id\" FROM \"DocFinanceiros\" WHERE \"ContaFinanceiraId\" IN ({reader.GetInt32(1)})");
@@ -271,14 +271,15 @@ namespace Driver
                                 deletadas.ForEach((c) => { if (c == reader.GetInt32(1)) flagDeletado = true; });
                                 if (!flagDeletado)
                                 {
-                                    if (qtdId2 == 0)
+                                    /*if (qtdId2 == 0)
                                     {
 
                                         DeleteContaFinanceirasCustomizado1(reader.GetInt32(1));
                                         deletadas.Add(reader.GetInt32(1));
 
                                     }
-                                    else
+                                    else*/
+                                    if (qtdId2 != 0)
                                     {
                                         UpdateDocFinanceirosCustomizado1(id, reader.GetInt32(1));
 
@@ -344,9 +345,10 @@ namespace Driver
                 Console.Out.WriteLine("Opening connection");
                 conn.Open();
 
-                using (var command = new NpgsqlCommand("DELETE FROM \"ContaFinanceiras\" WHERE \"Id\" = @i AND \"Ativo\" = 'TRUE'", conn))
+                using (var command = new NpgsqlCommand("DELETE FROM \"ContaFinanceiras\" WHERE \"Id\" = @i AND \"Ativo\" = @a", conn))
                 {
                     command.Parameters.AddWithValue("i", id);
+                    command.Parameters.AddWithValue("a", true);
 
                     int nRows = command.ExecuteNonQuery();
                     Console.Out.WriteLine(String.Format("Number of rows deleted={0}", nRows));
@@ -398,7 +400,7 @@ namespace Driver
             //Console.WriteLine("Press RETURN to exit");
             //Console.ReadLine();
         }
-        
+
         static void UpdateDocFinanceirosCustomizado1(int idp, int id)
         {
             // Build connection string using parameters from portal
@@ -430,7 +432,7 @@ namespace Driver
             //Console.WriteLine("Press RETURN to exit");
             //Console.ReadLine();
         }
-        
+
         /*
         static void SelectCustomizado2(string txtQuery)
         {
